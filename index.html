@@ -9,6 +9,16 @@
 </head>
 <body>
     <h1> Welcome to My Website!</h1>
+    <p>Click the button to see a message</p>
+    <button id = "showMessageBtn">Click me</button>
+    <p> id = "message"></p>
+    <script>
+      const button = document.getElementById("showMessageBtn");
+      const message = document.getElementById("message");
+      button.addEventListener("Click", function(){
+            message.textContent = "Cello, Welcome to my website!";
+            });
+    </script>
     <p>This is my personal website hosted on GitHub Pages.</p>
 </body>
 </html>
