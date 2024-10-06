@@ -64,11 +64,6 @@ footer {
     animation: pulse 1.5s infinite;
 }
 
-.fancy-button:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-}
-
 .fancy-button:active {
     background-color: #1e6e98;
     transform: translateY(2px);
