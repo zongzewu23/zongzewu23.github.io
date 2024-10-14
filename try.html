@@ -3,7 +3,6 @@
 <head>
   <title>Map Page</title>
   <style>
-    /* 设置地图容器的样式 */
     #map {
       height: 400px;
       width: 100%;
@@ -13,15 +12,15 @@
 <body>
 
   <h1>Google Map Integration</h1>
-  <!-- 地图将显示在这里 -->
+  
   <div id="map"></div>
 
-  <!-- Google Maps API 脚本 -->
+  <!-- Google Maps API  -->
   <script>
     function initMap() {
-      var location = {lat: -34.397, lng: 150.644}; // 设置地图中心的经纬度
+      var location = { lat: 47.655548, lng: -122.303200}; // UW Sea Latitude and longitude
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8, // 设置放大比例
+        zoom: 8, // zoom size 
         center: location
       });
     }
