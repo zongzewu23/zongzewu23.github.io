@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>About Page</title>
+  <title>Map Page</title>
+  <style>
+    /* 设置地图容器的样式 */
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the About Page</h1>
-    <p>This is another page in the same website.</p>
+
+  <h1>Google Map Integration</h1>
+  <!-- 地图将显示在这里 -->
+  <div id="map"></div>
+
+  <!-- Google Maps API 脚本 -->
+  <script>
+    function initMap() {
+      var location = {lat: -34.397, lng: 150.644}; // 设置地图中心的经纬度
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8, // 设置放大比例
+        center: location
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD1I_-lTQYW4iu-GY-e-z0bETZdYpiJ8A&callback=initMap">
+  </script>
+
 </body>
 </html>
+
