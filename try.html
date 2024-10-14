@@ -8,6 +8,9 @@
       width: 100%;
     }
   </style>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD1I_-lTQYW4iu-GY-e-z0bETZdYpiJ8A&callback=initMap">
+  </script>
 </head>
 <body>
 
@@ -18,15 +21,22 @@
   <!-- Google Maps API  -->
   <script>
     function initMap() {
-      var location = { lat: 47.655548, lng: -122.303200}; // UW Sea Latitude and longitude
+      var UW_location = { lat: 47.655548, lng: -122.303200}; // UW Sea Latitude and longitude
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8, // zoom size 
+        zoom: 23, // zoom size 
         center: location
       });
+
+     var marker = new google.maps.Marker({
+  position: { lat: 47.655548, lng: -122.303200 }, 
+  map: map,
+  title: "University of Washington"
+});
+          var trafficLayer = new google.maps.TrafficLayer();
+trafficLayer.setMap(map);
+
+
     }
-  </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD1I_-lTQYW4iu-GY-e-z0bETZdYpiJ8A&callback=initMap">
   </script>
 
 </body>
