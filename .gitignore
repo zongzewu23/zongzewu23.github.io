@@ -1,0 +1,79 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+/node_modules
+/.pnp
+.pnp.js
+
+# Build output
+/build
+/dist
+
+# Static files
+/public/static
+
+# Testing
+/coverage
+
+# Production environment
+.env.production.local
+
+# Development environment
+.env.development.local
+.env.local
+.env.*.local
+
+# Parcel-bundler cache (if using Parcel)
+/.cache
+
+# Next.js output (if applicable)
+/.next
+
+# Netlify/Vercel build output
+/.vercel
+/.netlify
+
+# macOS generated files
+.DS_Store
+
+# Windows generated files
+Thumbs.db
+
+# IDE or editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional npm cache directory
+.npm
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Uncomment if you have an .env file that shouldn't be included
+# .env
+
+# Ignore build artifacts
+*.cache
+
+# GitHub Pages generated output (optional)
+/docs
