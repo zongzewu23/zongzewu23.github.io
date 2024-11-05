@@ -1,0 +1,7 @@
+/* styles.css */
+.custom-background {
+  background-image: url("/public/pics/bg.jpg"); /* 直接引用 public 文件夹路径 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

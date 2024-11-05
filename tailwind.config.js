@@ -5,7 +5,12 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        dancing: ['Dancing Script', 'sans-serif'],
+        England: ['Playwrite GB S', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
