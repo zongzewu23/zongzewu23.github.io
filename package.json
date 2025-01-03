@@ -2,13 +2,16 @@
   "name": "wu",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+"scripts": {
   "dev": "next dev",
-  "build": "next build",
+"build": "next build",
+
   "start": "next start",
   "lint": "next lint",
-   "deploy": "npm run build && gh-pages -d out"
+  "deploy": "gh-pages -d out"
 },
+
+
   "homepage": "https://zongzewu23.github.io",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",

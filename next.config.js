@@ -2,11 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["i.ibb.co", "ik.imagekit.io"], // Allow outer website
+    domains: ["i.ibb.co", "ik.imagekit.io"],
+    unoptimized: true,
   },
   output: 'export',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/zongzewu23.github.io' : '/',
-  basePath: '/zongzewu23.github.io',
+  assetPrefix: '/',
 };
 
 module.exports = nextConfig;
+
