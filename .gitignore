@@ -35,4 +35,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Ignore out folder, but not for gh-pages deployment
-/out/
+!out/
