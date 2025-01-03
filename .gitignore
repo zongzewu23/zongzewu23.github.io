@@ -36,3 +36,4 @@ next-env.d.ts
 
 # Ignore out folder, but not for gh-pages deployment
 !out/
+!.nojekyll
