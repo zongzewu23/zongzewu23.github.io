@@ -98,8 +98,8 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          width={500} // 图片宽度
-          height={300} // 图片高度
+          width={500} 
+          height={300} 
           className="absolute hidden lg:block top-[60px] -right-10 w-[28.25rem] rounded-lg shadow-2xl scale-[1.0]
           transition
           lg:scale-[1.1]

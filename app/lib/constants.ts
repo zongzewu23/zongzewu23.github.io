@@ -33,7 +33,7 @@ export const projectsData = [
       "logos:maven",
       "logos:redis",
     ],
-    imageUrl:   "https://i.ibb.co/gJRFJBZ/BCW1.jpg",
+    imageUrl:   "/BCW.jpeg",
    
     githubLink: "https://github.com/zongzewu23/BetterCallWu-Takeaway",
     demoLink: "",
@@ -52,7 +52,7 @@ export const projectsData = [
       "logos:postgresql",
     ],
     imageUrl:  
-    "https://i.ibb.co/ZhtwxBc/Go-Bang-Go1.jpg",
+    "/GoBangGo.jpeg",
 
     urlLink: "https://gobang-869r.onrender.com/",
     githubLink: "https://github.com/zongzewu23/GoBang",
@@ -91,7 +91,7 @@ export const nav_links = [
 
 export const contact_links = [
   {
-    name: "ayanabha2002@gmail.com",
+    name: "astrowu61@gmail.com",
     icon: MailIcon,
     link: `mailto:${email}`,
     text: "Email",

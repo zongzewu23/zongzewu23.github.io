@@ -47,14 +47,12 @@ export default function Contact() {
     console.log(data);
 
     emailjs
-      .sendForm(
-        `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
-        `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
-        formRef.current as HTMLFormElement,
-        {
-          publicKey: `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`,
-        }
-      )
+    .sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID as string, // 服务 ID
+      process.env.NEXT_PUBLIC_TEMPLATE_ID as string, // 模板 ID
+      formRef.current as HTMLFormElement, // 表单引用
+      process.env.NEXT_PUBLIC_USER_ID as string // 用户 ID
+    )
       .then(
         () => {
           console.log("SUCCESS!");
@@ -192,7 +190,7 @@ export default function Contact() {
                     <input
                       type="text"
                       id="userName"
-                      {...register("userName", {
+                      {...register("from_name", {
                         required: "I need to know your name",
                         pattern: {
                           value: /^[a-zA-Z][a-zA-Z0-9]{2,}/,
@@ -217,7 +215,7 @@ export default function Contact() {
                     <input
                       id="userEmail"
                       type="email"
-                      {...register("userEmail", {
+                      {...register("reply_to", {
                         required: "Enter a correct email address",
                         pattern: {
                           value: /\S+@\S+\.\S+/,
@@ -241,7 +239,7 @@ export default function Contact() {
                     </label>
                     <textarea
                       id="userMessage"
-                      {...register("userMessage", {
+                      {...register("message", {
                         required: "I'll appreciate what you have to say.",
                       })}
                       rows={4}
