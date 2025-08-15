@@ -15,15 +15,14 @@ const  Resume = () =>{
         <section   className={cn(
             "std-backdrop-blur overflow-y-hidden card mt-12 sm:mt-16 md:mt-[100px]",
             "px-6 py-4 md:py-10 lg:py-12",
-            "flex flex-col lg:flex-row",         // 重点：小屏竖排，大屏并排
-            "items-center justify-center gap-8", // 让子元素之间留空隙
+            "flex flex-col lg:flex-row",         
+            "items-center justify-center gap-8", 
             "rounded-2xl bg-gradient-to-r from-[#d9d9d91f] to-[#7373731f]"
           )}
           >
  <div 
   className="size-full max-w-lg flex-1 flex flex-col items-start justify-center overflow-hidden pt-8"
 >
-  {/* BoxReveal 相关代码 */}
   <BoxReveal boxColor={"#32006E"} duration={0.5}>
     <p className="text-[3.5rem] font-semibold">
       Zongze Wu<span className="text-[#32006E]">.</span>

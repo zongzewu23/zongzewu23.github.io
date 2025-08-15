@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { cn } from "~/lib/utils";
-import BoxReveal from "../common/BoxReveal";
 import { useView } from "@/contexts/ViewContext";
 import "intersection-observer";
 import { useInView } from "react-intersection-observer";
@@ -46,7 +45,7 @@ export default function About() {
         framerProps={inView || hasAnimated ? { visible: { opacity: 1, x: 0 } } : { hidden: { opacity: 0, x: -20 } }}
       />
       <GradualSpacing
-        className="font-display text-center text-1xl -tracking-widest text-black dark:text-black md:text-1xl md:leading-[5rem]"
+        className="font-display text-center text-1xl -tracking-widest text-white dark:text-black md:text-1xl md:leading-[5rem]"
         text="I am passionate about technology and aspire to become a software & Web developer."
         framerProps={inView || hasAnimated ? { visible: { opacity: 1, x: 0 } } : { hidden: { opacity: 0, x: -20 } }}
       />
@@ -62,7 +61,7 @@ export default function About() {
         framerProps={inView || hasAnimated ? { visible: { opacity: 1, x: 0 } } : { hidden: { opacity: 0, x: -20 } }}
       />
       <GradualSpacing
-        className="font-display text-center text-1xl -tracking-widest text-black dark:text-black md:text-1xl md:leading-[5rem]"
+        className="font-display text-center text-1xl -tracking-widest text-white dark:text-black md:text-1xl md:leading-[5rem]"
         text="I believe learning with passion can unlock endless possibilities."
         framerProps={inView || hasAnimated ? { visible: { opacity: 1, x: 0 } } : { hidden: { opacity: 0, x: -20 } }}
       />

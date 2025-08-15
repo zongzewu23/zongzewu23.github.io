@@ -22,6 +22,41 @@ export const phoneno = "+1 425 766 9136";
 
 export const projectsData = [
   {
+  title: "Employee Management System - Enterprise Full Stack",
+ description: 
+ "A production-grade employee management system independently built from scratch without tutorials, showcasing enterprise-level architecture and DevOps practices. Features a React 18/TypeScript frontend with Ant Design components and a Spring Boot 3.x backend with JWT authentication, serving 25+ RESTful APIs with OpenAPI documentation. Deployed using Docker Compose orchestration with PostgreSQL, Redis caching, and Nginx reverse proxy. Implements comprehensive employee/department CRUD operations, role-based access control, and advanced search capabilities. Includes a complete CI/CD pipeline via GitHub Actions with 90%+ test coverage, health monitoring, and production-ready error handling. This 13-day intensive project demonstrates full ownership of the software development lifecycle, from system design to containerized deployment, with all architectural decisions made independently.",
+ tags: ["React 18", "TypeScript", "Spring Boot", "PostgreSQL", "Docker", "JWT", "Redis", "Nginx"],
+ icons: [
+   "logos:react",
+   "logos:typescript-icon", 
+   "logos:spring-icon",
+   "logos:postgresql",
+   "logos:docker-icon",
+   "logos:redis",
+   "logos:nginx",
+   "logos:java",
+ ],
+    imageUrl:  
+    "/ems.png",
+
+    dockerLink: "https://hub.docker.com/r/zongzewu/ems",
+    githubLink: "https://github.com/zongzewu23/employee-management-system",
+  },
+    {
+  title: "Enterprise IQ - AI Agents Supply Chain Analytics",
+  description:
+    "Enterprise IQ is an AI-powered supply chain analytics platform developed with a remote Indian team. Built with Next.js, TypeScript, and Python backend using CrewAI framework for intelligent agents. Features predictive analytics for customer insights, inventory optimization, and sales forecasting with interactive Plotly visualizations. Includes comprehensive dashboard system with Redux state management and SQLite database integration for enterprise-scale data processing.",
+  tags: ["Next.js", "TypeScript", "Python", "CrewAI", "Redux", "MySQL"],
+  icons: [
+    "logos:python",
+    "logos:sqlite",
+    "logos:nextjs-icon",
+    "logos:typescript-icon"
+  ],
+  imageUrl: "/AIAgent.jpg",
+  githubLink: "https://github.com/rahil911/multiagent-googleADK"
+},
+  {
     title: "BetterCallWu - Backend",
     description:
     "BCW is a food delivery platform with a management system and a mobile client built using Java and Spring Boot. It employs MySQL for data storage and Redis for caching email verification codes to ensure efficient authentication. The RESTful backend interacts seamlessly with the frontend and mobile app via AJAX for real-time updates. Maven manages dependencies and build automation, ensuring a robust architecture. The mobile app allows customers to place orders, while the management system handles operations. ",
@@ -55,6 +90,24 @@ export const projectsData = [
     "/GoBangGo.jpeg",
 
     urlLink: "https://gobang-869r.onrender.com/",
+    githubLink: "https://github.com/zongzewu23/GoBang",
+  },
+  {
+    title: "Seattle Hotel Explorer - Frontend",
+  description:
+    "Seattle Hotel Explorer is an interactive hotel discovery platform built with React 18, TypeScript, and Mapbox GL JS. Features intelligent clustering algorithms with K-means optimization, professional filter panels for price/rating/amenities, and smooth water-drop animations powered by Framer Motion. The frontend leverages react-map-gl for WebGL-accelerated map rendering,and Tailwind CSS for responsive design. Includes advanced performance optimizations with debounced clustering, stable component lifecycles, and production-ready TypeScript configurations. Developed using Cursor AI for accelerated development workflow.",
+  tags: ["React", "TypeScript", "Mapbox", "Tailwind", "Framer Motion"],
+  icons: [
+    "logos:react",
+    "logos:typescript-icon", 
+    "logos:mapbox",
+    "logos:tailwindcss-icon",
+    "simple-icons:framer",
+    "simple-icons:vite",
+  ],
+    imageUrl:  
+    "/she.png",
+
     githubLink: "https://github.com/zongzewu23/GoBang",
   },
 
@@ -244,39 +297,5 @@ export const skills = [
     ],
   },
 ];
-
-export const projects = [
-  {
-    name: "MEETUP",
-    techs: [
-      "HTML",
-      "JavaScript",
-      "ReactJs",
-      "TailwindCSS",
-      "NodeJs",
-      "MongoDB",
-      "WebRTC",
-      "Docker",
-      "Github Actions",
-      "AWS Lambda",
-      "AWS API Gateway",
-      "AWS S3",
-      "AWS Cloudfront",
-    ],
-    images: [
-      "https://i.ibb.co/ZhtwxBc/Go-Bang-Go1.jpg",
-"https://i.ibb.co/zVfTpt1/Go-Bang-Go3.jpg",
-"https://i.ibb.co/55jbss2/Go-Bang-Go2.jpg",
-"https://i.ibb.co/XbkLdBf/Go-Bang-Go4.jpg",
-   
-    ],
-    git: "https://github.com/zongzewu23/GoBang",
-    link: "https://gobang-869r.onrender.com/",
-    description:
-      "MeetUp is a WebRTC-based video conferencing app that allows users to create rooms with multiple people and chat in real-time.",
-  },
-  
-];
-
 
 

@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { projectsData } from "~/lib/constants";
 
 import Image from "next/image";
-import { projects } from "~/lib/constants";
 import Link from "next/link";
 import React from "react";
 import Project from "./project";

@@ -5,6 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { BiLinkExternal } from "react-icons/bi";
 import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
+import { FaDocker } from "react-icons/fa";
 import { Icon } from "@iconify/react";
 
 type ProjectProps = {
@@ -16,6 +17,7 @@ type ProjectProps = {
   githubLink?: string;
   demoLink?: string;
   urlLink?: string;
+  dockerLink?: string;
 };
 
 export default function Project({
@@ -27,6 +29,7 @@ export default function Project({
   githubLink,
   demoLink,
   urlLink,
+  dockerLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -77,6 +80,16 @@ export default function Project({
                 className="flex items-center bg-[#111827] text-white py-2 px-4 mr-2 rounded-full hover:scale-105"
               >
                 <AiFillYoutube className="mr-1" /> Demo
+              </a>
+            )}
+            {dockerLink && (
+              <a
+                href={dockerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center bg-[#111827] text-white py-2 px-4 mr-2 rounded-full hover:scale-105"
+              >
+                <FaDocker className="mr-1" /> Docker
               </a>
             )}
 
