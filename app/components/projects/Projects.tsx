@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { projectsData } from "~/lib/constants";
 
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Project from "./project";
 import "react-multi-carousel/lib/styles.css";

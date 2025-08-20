@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { cn } from "~/lib/utils";
 import { useView } from "@/contexts/ViewContext";
 import "intersection-observer";
 import { useInView } from "react-intersection-observer";

@@ -1,6 +1,4 @@
-import { useInView } from "react-intersection-observer";
 import BoxReveal from "../common/BoxReveal";
-import { Button } from "../common/button";
 import React, { useState } from "react";
 import { Lens } from "../common/Lens";
 import Image from "next/image";

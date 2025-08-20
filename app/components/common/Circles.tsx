@@ -26,6 +26,7 @@ export function OrbitingCircles({
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
           className="pointer-events-none absolute inset-0 size-full"
+          style={{ zIndex: 1 }}
         >
           <circle
             className="stroke-black/10 stroke-1 dark:stroke-white/10"
@@ -43,6 +44,7 @@ export function OrbitingCircles({
             "--duration": duration,
             "--radius": radius,
             "--delay": -delay,
+            zIndex: 2,
           } as React.CSSProperties
         }
         className={cn(
@@ -52,7 +54,9 @@ export function OrbitingCircles({
             className,
           )}
         >
-        {children}
+         <div style={{ position: 'relative', zIndex: 100 }}> 
+          {children}
+        </div>
       </div>
     </>
   );
