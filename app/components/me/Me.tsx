@@ -38,6 +38,7 @@ export default function Me() {
   const outerCircles = [
     { icon: <Icons.W_LOGO />, delay: 15, radius: 330 },
     { icon: <Icons.wuCut />, delay: 10, radius: 330 },
+    { icon: <Icons.lc50days />, delay: 20, radius: 330 },
   ];
 
 
@@ -48,9 +49,7 @@ export default function Me() {
       id="me"
       className="relative overflow-visible mt-12 sm:mt-16 md:mt-[50px] px-6 py-4 md:py-10 lg:py-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl"
     >
-      {/* 容器 */}
       <div className="relative flex h-[900px] w-full flex-col items-center justify-center overflow-visible rounded-lg bg-background md:shadow-orange-50">
-        {/* 卡片 */}
         <CardContainer
           containerClassName={cn(
             "mt-0",
@@ -67,7 +66,6 @@ export default function Me() {
               "flex items-start justify-start p-4 relative card-body" // 添加 card-body 类
             )}
           >
-            {/* 卡片内容 */}
             <CardItem
               rotateX={5}
               rotateY={5}
@@ -84,9 +82,9 @@ export default function Me() {
               <div
                 className="flex text-5xl font-bold font-kumbh relative z-10" // 设置 z-10
                 style={{
-                  position: "absolute", // 设置绝对定位
-                  top: "70px", // 向下偏移 70px
-                  left: "-20px", // 向左偏移 60px
+                  position: "absolute", 
+                  top: "70px", 
+                  left: "-20px", 
                   //color: "#200714"
                   color: "#280003"
                 }}
@@ -99,13 +97,13 @@ export default function Me() {
             </CardItem>
 
             <VelocityScroll
-              defaultVelocity={2.5} // 设置基础速度
-              numRows={3} // 增加显示行数
-              className="text-5xl md:text-4xl relative z-10" // 设置字体大小和颜色，添加 z-10
+              defaultVelocity={2.5} 
+              numRows={3} 
+              className="text-5xl md:text-4xl relative z-10" 
               style={{
-                position: "absolute", // 设置绝对定位
-                top: "250px", // 向下偏移 250px
-                left: "0px", // 向左偏移 0px
+                position: "absolute", 
+                top: "250px", 
+                left: "0px", 
               }}
             >
               Dub Programmer Badminton player guitar player
@@ -113,7 +111,6 @@ export default function Me() {
           </CardBody>
         </CardContainer>
 
-        {/* 内圈元素 */}
         {innerCircles.map((circle, index) => (
           <OrbitingCircles
             key={index}
@@ -127,7 +124,6 @@ export default function Me() {
           </OrbitingCircles>
         ))}
 
-        {/* 外圈元素 */}
         {outerCircles.map((circle, index) => (
           <OrbitingCircles
             key={index}
@@ -244,6 +240,24 @@ const Icons = {
     >
       <img
         src="/badminton.svg"
+        alt="Avatar"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
+    </div>
+  ),
+  lc50days: () => (
+    <div
+      style={{
+        width: "50px",
+        height: "50px",
+      }}
+    >
+      <img
+        src="/lc50days.png"
         alt="Avatar"
         style={{
           width: "100%",
