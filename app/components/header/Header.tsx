@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 export default function Header() {
   const { sectionInView } = useView();
@@ -73,6 +73,9 @@ export default function Header() {
             </Link>
             <Link target="_blank" href="https://github.com/zongzewu23">
               <Icon icon="hugeicons:github" />
+            </Link>
+            <Link target="_blank" href="https://leetcode.com/u/astrowu61/">
+              <Icon icon="hugeicons:leetcode" />
             </Link>
             <Link target="_blank" href="https://www.instagram.com/zongze_wuuuuuu">
             <Icon icon="basil:instagram-outline" />
